@@ -7,11 +7,8 @@ using System.Threading.Tasks;
 
 namespace IMS.UseCases.PluginInterfaces
 {
-    public class IInventoryRepository
+    public interface IInventoryRepository
     {
-        internal async Task<IEnumerable<Inventory>> GetInventoriesByNameAsync(string name)
-        {
-            throw new NotImplementedException();
-        }
+        Task<IEnumerable<Inventory>> GetInventoriesByNameAsync(string name);
     }
 }
